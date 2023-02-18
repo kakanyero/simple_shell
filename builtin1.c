@@ -2,7 +2,7 @@
 /**
  * _myhistory - displays the history list, one command by line, preceded
  * with line numbers, starting at 0.
- * @info: Structure containing potential arguments. Used to maintain
+ * @info: Structure contains potential arguments. Used to maintain
  * constant function prototype.
  * Return: Always 0
  */
@@ -12,7 +12,7 @@ int _myhistory(info_t *info)
 	return (0);
 }
 /**
- * unset_alias - sets alias to string
+ * unset_alias - sets alias to the string
  * @info: parameter struct
  * @str: the string alias
  *
@@ -53,7 +53,7 @@ int set_alias(info_t *info, char *str)
 	return (add_node_end(&(info->alias), str, 0) == NULL);
 }
 /**
- * print_alias - prints an alias string
+ * print_alias - prints an alias to thestring
  * @node: the alias node
  *
  * Return: Always 0 on success, 1 on error
