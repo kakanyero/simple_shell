@@ -17,7 +17,8 @@ if (st.st_mode & S_IFREG)
 return (1);
 }
 return (0);
-}/**
+}
+/*
 * dup_chars - duplicates characters
 * @pathstr: the PATH string
 * @start: starting index
@@ -60,7 +61,7 @@ if (!pathstr[i] || pathstr[i] == ':')
 {
 path = dup_chars(pathstr, curr_pos, i);
 if (!*path)
-_strcat(path, cmd);else
+_strcat(path, cmd); else
 {
 _strcat(path, "/");
 _strcat(path, cmd);
